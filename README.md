@@ -109,3 +109,8 @@ app/
 - Basic auth on the endpoints.
 - Hybrid search to catch exact names, numbers, and other proper nouns that pure semantic search misses.
 
+9. **Simple demo link**
+https://drive.google.com/file/d/1vUxhrBajwqikAmk3JnJAv_LjFselv8Pp/view?usp=sharing
+
+
+
