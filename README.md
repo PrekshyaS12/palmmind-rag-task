@@ -1,4 +1,4 @@
-# PalmMind RAG Service 
+# RAG Service 
 
 A backend with two REST APIs built with FastAPI:
 
