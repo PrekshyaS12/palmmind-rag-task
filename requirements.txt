@@ -11,3 +11,4 @@ pinecone==5.4.2
 google-genai==1.21.1
 python-dotenv==1.0.1
 tenacity==8.5.0
+pytest

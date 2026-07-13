@@ -5,6 +5,7 @@ POST /chat
 
 """
 from fastapi import APIRouter, Depends
+from app.core.security import verify_api_key
 from sqlalchemy.orm import Session
 
 from app.db.session import get_db
@@ -16,7 +17,7 @@ from app.services.retrieval import answer_question
 router = APIRouter(tags=["chat"])
 
 
-@router.post("/chat", response_model=ChatResponse)
+@router.post("/chat", response_model=ChatResponse, dependencies=[Depends(verify_api_key)])
 def chat(request: ChatRequest, db: Session = Depends(get_db)) -> ChatResponse:
     history = memory.get_history(request.session_id)
 

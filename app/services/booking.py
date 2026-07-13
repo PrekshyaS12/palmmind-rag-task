@@ -29,8 +29,7 @@ class BookingDetails(BaseModel):
     email: EmailStr
     date: str
     time: str
-
-
+  
 def extract_booking_details(message: str) -> BookingDetails | None:
    
     response = client.models.generate_content(
